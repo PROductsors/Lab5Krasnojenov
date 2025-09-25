@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота 5</title>
+</head>
+<body>
+  <h1>Лабораторна робота 5</h1>
+
+  <!-- 1. Таблиця -->
+  <h2>Розклад</h2>
+  <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>День</th>
+        <th>Урок</th>
+        <th>Аудиторія</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Понеділок</td>
+        <td>Математика</td>
+        <td>101</td>
+      </tr>
+      <tr>
+        <td>Фізика</td>
+        <td>202</td>
+      </tr>
+      <tr>
+        <td>Вівторок</td>
+        <td colspan="2">Лабораторна робота (інформатика)</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Разом занять: 3</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- 2. Форма -->
+  <h2>Реєстрація</h2>
+  <form>
+    <label>
+      Ім’я: 
+      <input type="text" name="fname" required>
+    </label><br><br>
+
+    <label>
+      Прізвище: 
+      <input type="text" name="lname" required>
+    </label><br><br>
+
+    <label>
+      Email: 
+      <input type="email" name="email" required>
+    </label><br><br>
+
+    <label>
+      Пароль: 
+      <input type="password" name="pass" minlength="6" required>
+    </label><br><br>
+
+    <p>Стать:</p>
+    <label><input type="radio" name="gender" value="male" required> Чоловіча</label>
+    <label><input type="radio" name="gender" value="female"> Жіноча</label><br><br>
+
+    <p>Хобі:</p>
+    <label><input type="checkbox" name="hobby" value="sport"> Спорт</label>
+    <label><input type="checkbox" name="hobby" value="music"> Музика</label>
+    <label><input type="checkbox" name="hobby" value="reading"> Читання</label><br><br>
+
+    <button type="submit">Зареєструватися</button>
+  </form>
+</body>
